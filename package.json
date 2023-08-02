@@ -1,0 +1,17 @@
+{
+  "name": "cart-system",
+  "version": "1.0.0",
+  "scripts": {
+    "dev-server": "yarn --cwd ./server start",
+    "dev-client": "yarn --cwd ./client start",
+    "test": "yarn --cwd ./server test",
+    "dev": "npm-run-all -p -r dev-server dev-client",
+    "build-server": "yarn --cwd ./server build",
+    "build-client": "yarn --cwd ./client build",
+    "build": "npm-run-all -p -r build-server build-client"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
